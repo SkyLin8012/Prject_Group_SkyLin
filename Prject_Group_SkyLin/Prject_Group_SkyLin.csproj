@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50E12A11-0C68-46FC-90CF-F6201B05AA24}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Prject_Group_SkyLin</RootNamespace>
+    <AssemblyName>Prject_Group_SkyLin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Data.Tools.ExceptionMessageBox, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.Hello\ClassMyInfo.cs" />
+    <Compile Include="1.Hello\FormHollo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Hello\FormHollo.designer.cs">
+      <DependentUpon>FormHollo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="14.Guess\ClassGuess.cs" />
+    <Compile Include="14.Guess\Form_Guess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="14.Guess\Form_Guess.designer.cs">
+      <DependentUpon>Form_Guess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="14.Guess\Form_Manue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="14.Guess\Form_Manue.designer.cs">
+      <DependentUpon>Form_Manue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="15.Alarm\ClassAlarm.cs" />
+    <Compile Include="15.Alarm\Form_Alarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="15.Alarm\Form_Alarm.designer.cs">
+      <DependentUpon>Form_Alarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Loan\ClassLoanInfo.cs" />
+    <Compile Include="2.Loan\Form_Loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Loan\Form_Loan.designer.cs">
+      <DependentUpon>Form_Loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3.POS\Bar_POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.POS\Bar_POS.designer.cs">
+      <DependentUpon>Bar_POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3.POS\ClassBarPos.cs" />
+    <Compile Include="4.Student_StudentForm\ClassStudentScore.cs" />
+    <Compile Include="4.Student_StudentForm\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4.Student_StudentForm\StudentForm.designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7.MyClac\ClassMyClas.cs" />
+    <Compile Include="7.MyClac\Form_MyClac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7.MyClac\Form_MyClac.designer.cs">
+      <DependentUpon>Form_MyClac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6.Student_Grade_List\ClassStudentGrade_List.cs" />
+    <Compile Include="6.Student_Grade_List\FormStudentGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6.Student_Grade_List\FormStudentGrade.designer.cs">
+      <DependentUpon>FormStudentGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="8.ForDoWhile\classForDoWhile.cs" />
+    <Compile Include="8.ForDoWhile\Form_ForDoWhile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8.ForDoWhile\Form_ForDoWhile.designer.cs">
+      <DependentUpon>Form_ForDoWhile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="9.XOGame\ClassXOGame.cs" />
+    <Compile Include="9.XOGame\Form_XOGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="9.XOGame\Form_XOGame.designer.cs">
+      <DependentUpon>Form_XOGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Menu_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Menu_UI.designer.cs">
+      <DependentUpon>Form_Menu_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="1.Hello\FormHollo.resx">
+      <DependentUpon>FormHollo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="14.Guess\Form_Guess.resx">
+      <DependentUpon>Form_Guess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="14.Guess\Form_Manue.resx">
+      <DependentUpon>Form_Manue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="15.Alarm\Form_Alarm.resx">
+      <DependentUpon>Form_Alarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Loan\Form_Loan.resx">
+      <DependentUpon>Form_Loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.POS\Bar_POS.resx">
+      <DependentUpon>Bar_POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.Student_StudentForm\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7.MyClac\Form_MyClac.resx">
+      <DependentUpon>Form_MyClac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6.Student_Grade_List\FormStudentGrade.resx">
+      <DependentUpon>FormStudentGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8.ForDoWhile\Form_ForDoWhile.resx">
+      <DependentUpon>Form_ForDoWhile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="9.XOGame\Form_XOGame.resx">
+      <DependentUpon>Form_XOGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu_UI.resx">
+      <DependentUpon>Form_Menu_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Img\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
